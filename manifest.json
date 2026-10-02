@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon No Sponsored Listings",
+  "short_name": "No Sponsored",
+  "version": "1.0.0",
+  "description": "Hides sponsored products, sponsored carousels, brand banners and video ads on Amazon search results.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/s?*", "https://www.amazon.com/s/*"],
+      "js": ["src/rules.js", "src/content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
