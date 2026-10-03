@@ -1,9 +1,9 @@
-# Amazon No Sponsored Listings
+# Amazon Results No Sponsored
 
-A Chrome extension (Manifest V3) that hides sponsored listings on Amazon search-result
+A browser extension (Manifest V3) that hides sponsored listings on Amazon search-result
 pages (`https://www.amazon.com/s?k=...`), whatever the sort order.
 
-## Install
+## Install locally in Chrome
 
 1. Open `chrome://extensions` and turn on **Developer mode**.
 2. Click **Load unpacked** and choose this folder (the one containing `manifest.json`).
@@ -47,3 +47,10 @@ npm test
 - `manifest.json` — MV3 manifest; content scripts only, no permissions requested.
 - `src/rules.js` — the ad markers, the stylesheet, and row detection (no chrome.* APIs).
 - `src/content.js` — injects the stylesheet and tags marker-less ads as the page changes.
+
+## Publishing information
+
+- [Store description](docs/description.md)
+- [Privacy policy](docs/privacy.md)
+- [Support](docs/support.md)
+- Firefox's Manifest V3 add-on ID and no-data-collection declaration are in `manifest.json`.
